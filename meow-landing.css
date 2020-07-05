@@ -1,0 +1,69 @@
+
+/*------------ Element Styles-------------*/
+
+
+.top-nav {
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.top-nav h1 {
+    color: #1169f7;
+    font-family: "Arial Rounded MT Bold";
+}
+
+.burger {
+    height: 4em;
+    width: 4em
+}
+
+button {
+    height: 3em;
+    width: 4em;
+    background-color: #1169f7;
+    color: white;
+    box-shadow: #022761;
+    border-radius: 15%;
+}
+
+.logo-display {
+    background-color: #1169f7;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    
+.logo-display img {
+    padding-top: 2%;
+    height: 75%;
+    width: 18.75%;
+}
+
+.logo-display h1 {
+    color: white;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 100px;
+    
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.gallery img {
+    height: 30%;
+    width: 30%;
+}
+
+
+footer {
+    background-color: #1169f7;
+}
