@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meowspace</title>
     <link rel="stylesheet" href="meow-landing.css">
-    <link rel="javasheet"  href="meow-landing.js">
-</head>
 
+</head>
+<body>
 <header class="top-nav">
     <h1>meowspace.com</h1>
 
-        <form>
+        <form class="sign_up">
             <label for="name">Name:</label>
             <input type="text" id="name" name="user_name">
             <label for="mail">Email:</label>
@@ -20,7 +20,7 @@
 
         </form>
 
-        <form>
+        <form class="sign_in">
            
             <label for="user">User Name:</label>
             <input type=text id="user" name="user_name">
@@ -31,9 +31,8 @@
 
         <button class="burger">
             <div>About</div>
-            <div>Profiles</div>
+            <div href="gallery">Profiles</div>
             <div>Contact</div>
-            <div>Terms of Service</div>
         </button>
 
     </header>
@@ -43,17 +42,45 @@
 <section class="logo-display">
     <img src="meow-img/meow-logo4.png">
     <h1>meowspace.com</h1>
-        <p>a place for felines</p>
 </section>
+
 <!------The about section should use a carousel to display about slides  -------->
 
 
 <section class="about">
     <h2>about</h2>
-        <p>this is the section where we talk about why meowspaceexsists
-            and how it came to be. What the desireced outcome of this platformen
-            is
-        </p>
+       <div class="carousel">
+           <button class="carousel_button carousel_button--left is-hidden">
+               <img src="meow-img/back.png">
+           </button>
+           <div class="carousel_track-container">
+               <ul class="carousel_track">
+                   <li class="carousel_slide current-slide">
+                       <img class= "carousel_image" src= "meow-img/Cat-1.jpg">
+                   </li>
+                   <li class="carousel_slide">
+                       <img class= "carousel_image" src="meow-img/Cougar-2.jpg">
+                   </li>
+                   <li class="carousel_slide">
+                        <img class= "carousel_image" src="meow-img/Morris&friend.jpg">
+                   </li>
+                   <li class="carousel_slide">
+                       <img class= "carousel_image" src="meow-img/Squash-1.jpg">
+                   </li>
+               </ul>
+           </div>
+
+           <button class="carousel_button carousel_button--right">
+                <img src="meow-img/arrow.png">
+           </button>
+
+           <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>  
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+           </div>
+
+       </div>
 </section>
 
 <!-------Gallery section of nine photos equally spaced using flex properties-->
@@ -80,3 +107,6 @@
     <h3>Contact</h3>
     
 </footer>
+<script src="meowspace.js"></script>
+</body>
+</html>
