@@ -3,7 +3,7 @@
 
 
 h2 {
-   font-family: "Arial Rounded MT Bold";
+   font-family: "Arial";
    color: #1169f7;
 }
 
@@ -11,13 +11,14 @@ h2 {
 .top-nav {
     display: flex;
     flex: wrap;
+    justify-content: space-evenly;
 
     
 }
 
 .top-nav h1 {
     color: #1169f7;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial";
     padding-right: 5%;
 }
 
@@ -33,11 +34,13 @@ h2 {
     color: white;
     box-shadow: #022761;
     border-radius: 15%;
+    cursor: pointer;
 }
 
 .logo-display {
     background-color: #1169f7;
-    margin: 0 -1em;
+    background-size: cover;
+    margin: 0 -10px 0 -10px;
     height: 350px;
     width: 100%;
     display: flex;
@@ -54,7 +57,7 @@ h2 {
 
 .logo-display h1 {
     color: white;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial";
     font-size: 100px;
     
 }
@@ -142,6 +145,7 @@ h2 {
 .is-hidden {
     display: none;
 }
+
 
 /*----------- Section of profiles -------------*/
 

@@ -1,25 +1,35 @@
 
 
-//------------ Carousel Java Script Functions--------------//
+
+
+//Sign up prompt and return 
+
+const signUp = document.querySelector('#sign-up');
+console.log(signUp)
+
+
+ 
+
+//------------ Carousel Java Script Functions--------------
 
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel_button--right');
-const prevButton = document.querySelector('carousel_button--left');
-const dotsNav = document.querySelector('carousel_nav');
+const prevButton = document.querySelector('.carousel_button--left');
+const dotsNav = document.querySelector('.carousel_nav');
 const dots = Array.from(dotsNav.children);
 //console.log();//
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-// console.log(slideWidth);//
+// console.log(slideWidth);
 
 
-// arrange the slides next to one another //
+// arrange the slides next to one another 
 
-//slides[0].style.left = 0;//
-//slides[1].style.left = slideWidth + 'px';//
-//slides[2].style.left = slideWidth * 2 + 'px';//
-//slides[3].style.left = slideWidth * 4 + 'px';//
+/*slides[0].style.left = 0;
+slides[1].style.left = slideWidth + 'px';
+slides[2].style.left = slideWidth * 2 + 'px';
+slides[3].style.left = slideWidth * 4 + 'px';*/
 
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
@@ -51,7 +61,8 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
-// when I click left, move slides to the left //
+// when I click left, move slides to the left 
+
 prevButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide') 
   const prevSlide = currentSlide.prevElementSibling;
@@ -65,7 +76,7 @@ prevButton.addEventListener('click', e => {
 })
 
 
-// when I click right, move slders the right//
+// when I click right, move slders the right
 
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide'); 
@@ -78,14 +89,14 @@ nextButton.addEventListener('click', e => {
   updateDots(currentDot, nextDot);
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 
-  //const amountToMove = nextSlide.style.left;
-  //move to the next slide//
-  //track.style.transform = 'translateX(' + amountToMove + ')';  
-  //currentSlide.slide.classList.remove('current-slide');
-  //nextSlide.classList.add('current-slide');
+  /*const amountToMove = nextSlide.style.left;
+  move to the next slide
+  track.style.transform = 'translateX(' + amountToMove + ')';  
+  currentSlide.slide.classList.remove('current-slide');
+  nextSlide.classList.add('current-slide');*/
 })
 
-// when I click the nav indicators, move to that slide //
+// when I click the nav indicators, move to that slide 
 
 dotsNav.addEventListener('click', e => {
     //what indicator was clicked on
@@ -102,10 +113,3 @@ dotsNav.addEventListener('click', e => {
     updateDots(currentDot, targetDot);
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
     })
-
-
-
-
-
-
-
