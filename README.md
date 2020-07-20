@@ -8,7 +8,7 @@ It's is a landing page for a new social networking platform where by users inter
 
 ### Mandatory
 
-- [x] Responsive Project, using a media queries.
+- [x] Responsive Project, using media queries.
 - [x] At least 3 custom CSS elements in a .css file, applied to the HTML.
 - [x] Java Script in a separate .js file, applied to the HTML.
 - [x] Code Comments that document sections of of the code to make it
