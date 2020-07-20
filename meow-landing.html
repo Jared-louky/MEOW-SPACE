@@ -8,36 +8,39 @@
 
 </head>
 <body>
-<header class="top-nav">
-    <h1>meowspace.com</h1>
 
-        <form class="sign_up">
-            <button id="sign-up" type="submit">Sign Up</button>
-        </form>
+<div class="container">
+    <nav class="navbar">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
 
-        <form class="sign_in">
-           
-            <label for="user">User Name:</label>
-            <input type=text id="user" name="user_name">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="user_password">
-            <button type="submit">Sign In</button>
-        </form>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class=nav-link>Purr-ofiles</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
 
-        <button class="burger">
-            <div>About</div>
-            <div href="gallery">Profiles</div>
-            <div>Contact</div>
-        </button>
-
-    </header>
+        </ul>
+    </nav>
+</div>
+      
 
 
 
-<section class="logo-display">
-    <img src="meow-img/meow-logo4.png">
-    <h1>meowspace.com</h1>
-</section>
 
 <!------The about section should use a carousel to display about slides  -------->
 
@@ -47,7 +50,7 @@
         </button>
             <div class="carousel_track-container">
                <ul class="carousel_track">
-                   <li class="carousel_slide">
+                   <li class="carousel_slide current-slide">
                        <img class="carousel-image" src="meow-img/slide-1.jpg" alt="">
                    </li>
                    <li class="carousel_slide">
@@ -65,7 +68,7 @@
             <img src="meow-img/arrow.png" alt="next">
         </button>
         <div class="carousel_nav">
-            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator current-slide"></button>
             <button class="carousel_indicator"></button>
             <button class="carousel_indicator"></button>
             <button class="carousel_indicator"></button>

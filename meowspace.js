@@ -2,15 +2,16 @@
 
 
 
-//Sign up prompt and return 
+//----------- Hambuger Menu 
 
-const signUp = document.querySelector('#sign-up');
-console.log(signUp)
+const mneuIcon = document.querySelector('.hamburger-menu');
+const navbar = document.querySelector('.navbar');
 
+mneuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('change');
+})
 
- 
-
-//------------ Carousel Java Script Functions--------------
+//------------ Carousel Java Script Functions 
 
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
@@ -18,7 +19,7 @@ const nextButton = document.querySelector('.carousel_button--right');
 const prevButton = document.querySelector('.carousel_button--left');
 const dotsNav = document.querySelector('.carousel_nav');
 const dots = Array.from(dotsNav.children);
-//console.log();//
+//console.log();
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 // console.log(slideWidth);
@@ -52,7 +53,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.lenght - 1) {
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
     } else {
