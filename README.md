@@ -19,26 +19,26 @@ It's is a landing page for a new social networking platform where by users inter
 
 - [x] Navigation menu, that collapses into a "hamburger."
 - [x] Flexbox arranged areas of content, minimum of 2, must be reactive. 
-- [] Media queires to switch from mulit column layout to single
+-  Media queires to switch from mulit column layout to single
        column layout depedong on screen size. 
-- [] A form that takes in a least two fields of information, and 
+-  A form that takes in a least two fields of information, and 
        validates that input.
-- [] JavaScript function whose return value is used in your site.
+-  JavaScript function whose return value is used in your site.
        The function must be triggered by user action (ex: click a button)
-- [] Use JavaScript to perform math opertations and display the results 
+- Use JavaScript to perform math opertations and display the results 
        on the site.
-- [] Create and populate a JavaScript Array, then display the 
+- Create and populate a JavaScript Array, then display the 
        retrived values on your site.
-- [] Use the ```:nth child``` CSS to style a series of elements 
-- [] Import Bootstrap from a CDN and use its column system to create 
+-  Use the ```:nth child``` CSS to style a series of elements 
+-  Import Bootstrap from a CDN and use its column system to create 
        a responsive design. 
 - [x] Create an image carousel with at least three images that
         rotate through. 
-- [] Other 
+-  Other 
 
 ### Thoughts on Project 
 
-I've enjoyed the process of learing these skills, in the future I should improve my design layout skills. 
+I've enjoyed the process of learning these skills, in the future I should improve my design layout skills. 
 
 
 
