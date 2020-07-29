@@ -67,7 +67,6 @@ movetoSlide(track, currentSlide, prevSlide);
 updateDots(currentDot, prevDot);
 hideShowArrows(slides, prevButton, nextButton, prevIndex);
 
-
 });
 
 // WHEN I CLICH RIGHT MOVE SLIDE RIGHT
@@ -99,5 +98,4 @@ dotsNav.addEventListener('click', e => {
 movetoSlide(track, currentSlide, targetSlide);
 updateDots(currentDot, targetDot);
 hideShowArrows(slides, prevButton, nextButton, targetIndex);
-
 })
