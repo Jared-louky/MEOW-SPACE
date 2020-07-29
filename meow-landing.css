@@ -6,47 +6,73 @@
 }
 
 h2 {
-    padding-top: 10vh;
-    padding-left: 12vw;
+    padding-top: 1 em;
+    padding-left: 4rem;
     color: #1169f7;
-    font-size: 8em;
+    font-size: 6em;
+}
+
+p {
+    font-size: 20px;
+    margin: 5%, 15%, 5%, 15%;
+}
+
+.text-box {
+    margin: 5% 18% 5% 18%;
+
 }
 
 /*-------------- Navigation Bar -------------*/
 
-.container {
+.top-container {
     width: 100%;
-    height: 50vh;
+    height: 16rem;
     background-color: #1169f7;
-    margin-left: -20px;
-    margin-top: -20px;
-    margin-right: -200vw;
+    display: flex;
+    /*  FIRST FLEX CONTAINER  */
+    flex: wrap;
+    justify-content: space-around;
+    justify-items: start;
+    align-items: flex-start;
 }
+
+.cat-logo {
+    height: 300px;
+    width: 25%    
+}
+
+.font-logo {
+    height: 100%;
+    padding-right: 20%;
+    margin: none;
+}
+
 
 .hamburger-menu {
     width: 35px;
     height: 30px;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 2%;
+    right: 2%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    justify-items: flex-start;
 }
 
 .navbar {
     width: 120px;
-    height: 47%;
-    background-color: #3c7ce2;
+    height: 200px;
+    background-color: #1169f7;
     position: fixed;
-    top: 10px;
-    right: -200px;
+    top: 50px;
+    right: -120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5% 5% 5% 5%;
-    transition: right 0.8s cubic-bezier(1, 0, 0, 1)
+    transition: right 1s cubic-bezier(1, 0, 0, 1)
 }
 
 .change {
@@ -131,7 +157,8 @@ h2 {
 .carousel_image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /*object-fit: contain;*/
+
 }
 
 .carousel_track-container {
@@ -179,7 +206,6 @@ h2 {
 }
 
 .carousel_nav {
-    background: pink;
     display: flex;
     justify-content: center;
     padding: 15px 0;
@@ -190,13 +216,13 @@ h2 {
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: rgba(0,0,0,.3);
+    background: lightgray;
     margin: 0 10px;
     cursor: pointer;
 }
 
 .carousel_indicator .current-slide {
-    background: rgba(0,0,0,.75);
+    background: black;
 }
 
 .is-hidden {
@@ -204,13 +230,20 @@ h2 {
 }
 
 
+
 /*----------- Section of profiles -------------*/
+
+.profiles p {
+    margin: 10% 20% 10% 20%;
+    padding: 30%
+}
 
 .gallery {
     margin: 3em;
     display: flex;
+    /* SECOND FLEX CONTAINER */
     flex-wrap: wrap;
-    padding: 0 2em;
+    padding: 0 
 
 }
 
@@ -223,6 +256,26 @@ h2 {
 
 footer {
     background-color: #1169f7;
-    height: 5em;
+    height: 125px;
     width: -1em;
+    padding-bottom: -10em;
+    display: flexbox;
+    flex-wrap: wrap;
+    
 }
+
+
+
+
+
+h3 {
+    font-size: 50px;
+    padding-top: 20px;
+    margin-left: 50px;
+    color: white;
+}
+
+
+
+/*        Media Queries       */
+

@@ -38,7 +38,7 @@ It's is a landing page for a new social networking platform where by users inter
 
 ### Thoughts on Project 
 
-I've enjoyed the process of learing these skills, in the future I should improve my design layout skills. 
+I've enjoyed the process of learing these skills, in the future I should improve my design layout skills, they are not as strong here as they are in other forms
 
 
 

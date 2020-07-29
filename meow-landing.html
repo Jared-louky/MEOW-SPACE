@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meowspace</title>
     <link rel="stylesheet" href="meow-landing.css">
+    <link rel="stylesheet" href="normalize.css">
 
 </head>
 <body>
 
-<div class="container">
+<div class="top-container">
+    <img class="font-logo" src="meow-img/bigname.png" alt="">  
+    <img class="cat-logo" src="meow-img/meow-logo4.png">
+      
     <nav class="navbar">
         <div class="hamburger-menu">
             <div class="line line-1"></div>
@@ -25,13 +29,10 @@
                 <a href="#" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="#" class=nav-link>Profiles</a>
+                <a href="#profiles" class=nav-link>Profiles</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </li>
 
         </ul>
@@ -43,44 +44,79 @@
 
 
 <!------The about section should use a carousel to display about slides  -------->
-
-    <div class="carousel">
-        <button class="carousel_button  carousel_button--left">
-            <img src="meow-img/back.png" alt="prev">
-        </button>
-            <div class="carousel_track-container">
-               <ul class="carousel_track">
-                   <li class="carousel_slide current-slide">
-                       <img class="carousel-image" src="meow-img/slide-1.jpg" alt="">
-                   </li>
-                   <li class="carousel_slide">
-                       <img class="carousel-image" src="meow-img/slide-2.jpg" alt="">
-                   </li>
-                   <li class="carousel_slide">
-                       <img class="carousel-image" src="meow-img/slide-3.jpg" alt="">
-                   </li>
-                   <li class="carousel_slide">
-                       <img class="carousel-image" src="meow-img/slide-4.jpg" alt="">
-                   </li>
-               </ul> 
-            </div>
-        <button class="carousel_button carousel_button--right">
-            <img src="meow-img/arrow.png" alt="next">
-        </button>
-        <div class="carousel_nav">
-            <button class="carousel_indicator current-slide"></button>
-            <button class="carousel_indicator"></button>
-            <button class="carousel_indicator"></button>
-            <button class="carousel_indicator"></button>
+<div class="about" id="#about">
+    <h2>Our Story</h2>
+</div>
+<div class="text-box">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>    
+<div class="carousel">
+    
+    <button class="carousel_button  carousel_button--left is-hidden">
+        <img src="meow-img/back.png" alt="prev">
+    </button>
+        <div class="carousel_track-container">
+           <ul class="carousel_track">
+               <li class="carousel_slide current-slide">
+                   <img class="carousel-image" src="meow-img/slide-1.jpg" alt="">
+               </li>
+               <li class="carousel_slide">
+                   <img class="carousel-image" src="meow-img/slide-2.jpg" alt="">
+               </li>
+               <li class="carousel_slide">
+                   <img class="carousel-image" src="meow-img/slide-3.jpg" alt="">
+               </li>
+               <li class="carousel_slide">
+                   <img class="carousel-image" src="meow-img/slide-4.jpg" alt="">
+               </li>
+           </ul> 
         </div>
+    <button class="carousel_button carousel_button--right">
+        <img src="meow-img/arrow.png" alt="next">
+    </button>
+    <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
     </div>
+</div>
+<div class="text-box">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        est laborum.
+    </p>
+</div>
+    
+        
 
 
 <!-------Gallery section of nine photos equally spaced using flex properties-->
 
 <!-----Media queries in the gallery section will ------>
+<div class="proflies" id="profiles">
+  <h2>Profiles</h2>
+</div>  
+<div class="text-box">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci
+        sagittis eu volutpat odio facilisis mauris sit. Non sodales neque 
+        sodales ut etiam sit amet nisl. Dignissim enim sit amet venenatis 
+        urna cursus eget nunc scelerisque. Orci eu lobortis elementum nibh 
+        tellus. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. 
+     </p>
+</div>     
 
-<h2>Profiles</h2>
 <section class="gallery">
         <img src="meow-img/Cougar-2.jpg">
         <img src="meow-img/Morris&friend.jpg">
@@ -97,8 +133,7 @@
 
 
 <footer>
-    <h3>Contact</h3>
-    
+    <h3 id="contact">Contact</h3>
 </footer>
 <script src="meowspace.js"></script>
 </body>
