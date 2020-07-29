@@ -50,7 +50,7 @@ p {
     height: 30px;
     position: fixed;
     top: 2%;
-    right: 2%;
+    right: 4%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -59,21 +59,21 @@ p {
 }
 
 .navbar {
-    width: 120px;
-    height: 200px;
+    width: 115px;
+    height: 225px;
     background-color: #1169f7;
     position: fixed;
-    top: 20px;
-    right: -120px;
+    top: -225px;
+    right: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5% 5% 5% 5%;
-    transition: right 1s cubic-bezier(1, 0, 0, 1)
+    transition: top 1s ease-in-out;
 }
 
 .change {
-    right: 0;
+    top: 0;
 }
 
 .line {
@@ -111,7 +111,8 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     position: relative;
-    padding: 3px 0;
+    padding: 5px 0;
+    right: 20px;
 }
 
 .nav-link::before,
@@ -296,7 +297,6 @@ h3 {
         height: 10%;
         flex-direction: column;
     }
-
    
     .gallery img {
         width: 45%;
