@@ -28,12 +28,9 @@ p {
     width: 100%;
     height: 16rem;
     background-color: #1169f7;
-    display: flex;
-    /*  FIRST FLEX CONTAINER  */
     flex: wrap;
     justify-content: space-around;
-    justify-items: start;
-    align-items: flex-start;
+    flex-direction: row;
 }
 
 .cat-logo {
@@ -157,7 +154,7 @@ p {
 .carousel_image {
     width: 100%;
     height: 100%;
-    /*object-fit: contain;*/
+    object-fit: cover;
 
 }
 
@@ -275,6 +272,36 @@ h3 {
     color: white;
 }
 
-
 /*        Media Queries       */
+
+
+@media (max-width: 960px) {
+    body {
+        background: black;
+    }
+
+    p {
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .top-container {
+        height: 10%;
+        flex-direction: column;
+    }
+    .font-logo {
+        height: 50%;
+        width: 30%
+    }
+
+    .carousel_button {
+        background-color: darkgrey;
+    }   
+    .gallery img {
+        width: 45%;
+    }
+}
+
 
