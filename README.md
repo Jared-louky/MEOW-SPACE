@@ -38,11 +38,9 @@ It's is a landing page for a new social networking platform where by users inter
 
 ### Thoughts on Project 
 
-<<<<<<< HEAD
-I've enjoyed the process of learing these skills, in the future I should improve my design layout skills, they are not as strong here as they are in other forms
-=======
+- I decided to change the background form white to black on smaller screens, makes it easier to read in dark places on small screens.
+
 I've enjoyed the process of learning these skills, in the future I should improve my design layout skills. 
->>>>>>> a37d50250dc8177d593e829e9643a35d423e639e
 
 
 

@@ -99,3 +99,5 @@ movetoSlide(track, currentSlide, targetSlide);
 updateDots(currentDot, targetDot);
 hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
+
+
