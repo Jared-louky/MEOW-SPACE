@@ -41,7 +41,7 @@ p {
 .font-logo {
     height: 100%;
     padding-right: 20%;
-    margin: none;
+    margin: 0px;
 }
 
 
@@ -152,14 +152,14 @@ p {
     margin: 0 auto;
 }
 
-.carousel_image {
+.carousel-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .carousel_track-container {
-    background: lightgrey;
+    background: transparent;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -179,8 +179,7 @@ p {
     top: 0;
     bottom: 0;
     width: 100%;
-    object-fit: cover;
-    
+    object-fit: contain;    
 }
 
 .carousel_button {
@@ -242,7 +241,7 @@ p {
     display: flex;
     /* SECOND FLEX CONTAINER */
     flex-wrap: wrap;
-    padding: 0 
+    padding: 3rem;
 
 }
 
@@ -258,7 +257,7 @@ footer {
     height: 125px;
     width: -1em;
     padding-bottom: -10em;
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
 }    
 
@@ -284,28 +283,55 @@ h3 {
         color: white;
     }
     .navbar {
-        background-color: transparent;
+        background-color: #1169f7;
+        width: 100%;
+        height: 60px;
+        display: block;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
+
+    .nav-list {
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+    }
+
+    .carousel {
+        height: 300px;
+        width: 75%;
+    }
+
     .carousel_button {
         background-color: darkgrey;
-    }   
+    }  
+    
+    h2 {
+        font-size: 3em;
+        padding-top: 2em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
 
 }
 
-@media  (max-width: 650px) {
+@media  (max-width: 672px) {
     .top-container {
         height: 10%;
         flex-direction: column;
     }
    
     .gallery img {
-        width: 45%;
+        width: 90%;
+        padding-left: 2rem;
     }
 
     .cat-logo {
         align-items: center;
-        padding: -30rem;
-        margin: 0;
+        padding-left: 2rem;
+        margin-top: -15rem;
         height: 100%;
         width: 100%;
 

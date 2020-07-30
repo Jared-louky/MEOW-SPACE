@@ -36,11 +36,19 @@ It's is a landing page for a new social networking platform where by users inter
         rotate through. 
 -  Other 
 
-### Thoughts on Project 
 
-- I decided to change the background form white to black on smaller screens, makes it easier to read in dark places on small screens.
+### Potential Issues viewing 
 
-I've enjoyed the process of learning these skills, in the future I should improve my design layout skills. 
+- When creating this project I was unaware that the ```normalize.css``` needed to be placed before my ```meow-landing.css``` stylesheet.  
+
+### Respomnsivness in Project 
+
+- I decided to change the background form white to black on smaller screens, through ```@media```, makes it easier to read in dark places on small screens.
+
+- The drop down navigation menu accessed by the hamburger menu, changes layout through ```@media```, thus making scroll viewing easier.
+
+- The Profile Gallery photo break was created with ```@media```, going directly from three rows to one.
+
 
 
 
